@@ -68,3 +68,24 @@ VALUES ('kasun', 'Kasun Sampath', 'kasun123'),
        ('ruwan', 'Ruwan Lakmal', 'ruwan123'),
        ('upul', 'Upul Tharanga', 'upul123'),
        ('asiri', 'Asiri Kariyawasam', 'asiri123');
+
+INSERT INTO `order` (id, date, customer_id, username)
+VALUES
+    ('O001', '2023-11-15', 'C001', 'kasun'),
+    ('O002', '2023-12-02', 'C002', 'nuwan'),
+    ('O003', '2024-01-10', 'C003', 'ruwan'),
+    ('O004', '2024-02-18', 'C004', 'upul'),
+    ('O005', '2024-03-25', 'C005', 'asiri');
+
+INSERT INTO order_detail (order_id, item_code, qty, price)
+VALUES
+    ('O001', 'I001', 2, 1250.00),
+    ('O001', 'I002', 1, 1250.00),
+    ('O002', 'I003', 3, 8000.00),
+    ('O002', 'I004', 2, 500.00),
+    ('O003', 'I005', 4, 12500.00),
+    ('O003', 'I006', 3, 750.00),
+    ('O004', 'I001', 3, 1250.00),
+    ('O004', 'I002', 2, 1250.00),
+    ('O005', 'I003', 1, 8000.00),
+    ('O005', 'I004', 4, 500.00);
